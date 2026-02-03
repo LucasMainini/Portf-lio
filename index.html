@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portifólio</title>
 </head>
-<body> 
-        <div class="particulas"></div>
-    <nav class="navegacao"> 
-    <ul class="menu">
-        <li>
-            <a href="#inicio" class="menu-link">Início</a>
-        </li>
-        <li>
-            <a href="#sobre" class="menu-link">Sobre</a>
-        </li>
-        <li>
-            <a href="#projetos" class="menu-link">Projetos</a>
-        </li>
-        <li>
-            <a href="#contatos" class="menu-link">Contato</a>
-        </li>
-    </ul>
-        
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+
     </nav>
 
     <main id="inicio" class="cabecalho">
-       
-            <img src="img/Foto.png" alt="foto de lucas" class="foto-perfil">
-            <h1>Lucas Mainini Pinheiro</h1>
-            <p class="cab-sub-titulo">Desenvolvedor Front End</p> 
-        
+
+        <img src="img/Foto.png" alt="foto de lucas" class="foto-perfil">
+        <h1>Lucas Mainini Pinheiro</h1>
+        <p class="cab-sub-titulo">Desenvolvedor Front End</p>
+
 
     </main>
 
@@ -39,70 +41,94 @@
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Olá, sou Lucas, estou completando 20 anos e curso Análise e Desenvolvimento de Sistemas pela Unicesumar, em Curitiba. Atualmente no segundo ano da graduação, atuo profissionalmente como Aux Operacional de caixa forte na PROTEGE e estou em constante desenvolvimento no universo da programação, com foco em Front-End. Busco transformar ideias em interfaces intuitivas, funcionais e visualmente eficientes, unindo tecnologia, organização e aprendizado contínuo.</div>
-            </p>
-        </section>
-        
-        <section id="sobre" class="sobre">
+                Olá, sou Lucas, estou completando 20 anos e curso Análise e Desenvolvimento de Sistemas pela Unicesumar,
+                em Curitiba. Atualmente no segundo ano da graduação, atuo profissionalmente como Aux Operacional de
+                caixa forte na PROTEGE e estou em constante desenvolvimento no universo da programação, com foco em
+                Front-End. Busco transformar ideias em interfaces intuitivas, funcionais e visualmente eficientes,
+                unindo tecnologia, organização e aprendizado contínuo.
+        </div>
+        </p>
+    </section>
+
+    <section id="sobre" class="sobre">
         <h2 class="sobre-titulo"> Tecnologias </h2>
         <div class="sobre-caixa2">
             <img src="img/ChatGPT Image 2 de fev. de 2026, 20_56_03.png" alt="tecnologias" class="projeto-imagem">
-        </section>
-        
+    </section>
 
-        <section id="projetos" class="projetos">
-            
-            <h2 class="projetos-titulo">Meus Projetos</h2>
-            <div class="projeto-caixa">
-                <div class="projetos-card">
-                    <img src="img/poke.png" alt="Projeto1" class="projeto-imagem">
-                    <div class="caixa-textos">
-                        <h3 class="info-projetos">Site Pokemon Fire Red</h3>
-                        <p class="paragrafo-projetos">Este foi meu primeiro projeto na faculdade: um site desenvolvido no início da minha jornada na programação, onde transformei a nostalgia do meu jogo favorito da infância em uma experiência digital. Mais do que um trabalho acadêmico, esse projeto representa meu primeiro contato prático com desenvolvimento web e o ponto de partida da minha evolução no Front-End.</p>
-                    </div>
-                </div>
+
+    <section id="projetos" class="projetos">
+
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projeto-caixa">
+
+    <div class="projetos-card">
+        <img src="img/poke.png" alt="Projeto Pokemon" class="projeto-imagem">
+        <div class="caixa-textos">
+            <h3 class="info-projetos">Site Pokémon Fire Red</h3>
+            <p class="paragrafo-projetos">
+                Este foi meu primeiro projeto na faculdade, onde transformei a nostalgia
+                do meu jogo favorito da infância em uma experiência digital.
+            </p>
+        </div>
+    </div>
+
+    <div class="projetos-card">
+        <img src="img/Ultimo-projeto.png" alt="Project Store" class="projeto-imagem">
+        <div class="caixa-textos">
+            <h3 class="info-projetos">Project Store</h3>
+            <p class="paragrafo-projetos">
+                Este é o meu último projeto, no qual apliquei conceitos mais avançados
+                de HTML, CSS e JavaScript, com animações e interatividade.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+    </section>
+
+
+
+    <section id="contatos" class="contatos">
+        <h2 id="contatos-titulos">Entre Em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviar(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
-            
-        </section>
-        
-        
-        
-        <section id="contatos" class="contatos">
-    <h2 id="contatos-titulos">Entre Em Contato</h2>
 
-    <form class="formulario-contato" id="formulario" onsubmit="enviar(event)">
-        <div class="grupo-form">
-            <input placeholder="Nome" class="campo-form" id="nome">
-        </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" name="mensagem" placeholder="Digite sua Mensagem" rows="6"
+                    id="mensagem"></textarea>
+            </div>
 
-        <div class="grupo-form">
-            <textarea class="campo-form" name="mensagem" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
-        </div>
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
 
-        <button type="submit" class="botao-form">Enviar WhatsApp</button>
-    </form>
-</section>
+    <script>
+        function enviar(event) {
+            event.preventDefault(); // Impede o recarregamento da página
 
-<script>
-function enviar(event) {
-    event.preventDefault(); // Impede o recarregamento da página
+            const nome = document.getElementById("nome").value;
+            const mensagem = document.getElementById("mensagem").value;
+            const telefone = '';
 
-    const nome = document.getElementById("nome").value;
-    const mensagem = document.getElementById("mensagem").value;
-    const telefone = '';
+            // Monta a mensagem
+            const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
 
-    // Monta a mensagem
-    const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
-    const msgFormatada = encodeURIComponent(texto);
+            // URL do WhatsApp
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
 
-    // URL do WhatsApp
-    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-
-    // Abre o WhatsApp em uma nova aba
-    window.open(url, '_blank');
-}
-</script>
+            // Abre o WhatsApp em uma nova aba
+            window.open(url, '_blank');
+        }
+    </script>
 
 
 </body>
+
 </html>
